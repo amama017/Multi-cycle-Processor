@@ -1,0 +1,227 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Processor_n32
+Version: E-2010.12-SP5-3
+Date   : Sun May 13 18:45:09 2012
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: Rst (input port clocked by clock)
+  Endpoint: Dec/InstDecoder/MAddress_reg[2]
+            (rising edge-triggered flip-flop clocked by clock')
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Processor_n32      280000                saed90nm_max
+  Decoders_n32       8000                  saed90nm_max
+  Memory_n32         140000                saed90nm_max
+  set_n32            8000                  saed90nm_max
+  ALSU_n32           8000                  saed90nm_max
+  inst_dec_n32       8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             1.50       1.50
+  input external delay                                    1.00       2.50 f
+  Rst (in)                                                0.00       2.50 f
+  Dec/Rst (Decoders_n32)                                  0.00       2.50 f
+  Dec/U56/QN (INVX2)                                      0.21       2.71 r
+  Dec/U102/Q (AND2X2)                                     0.43       3.14 r
+  Dec/ControlSignals[19] (Decoders_n32)                   0.00       3.14 r
+  Mem/MARs1 (Memory_n32)                                  0.00       3.14 r
+  Mem/MARTRS1/En (tri_state_buffer_n32_70)                0.00       3.14 r
+  Mem/MARTRS1/U1/S1 (mux_2_73)                            0.00       3.14 r
+  Mem/MARTRS1/U1/U11/Q (MUX21X1)                          0.45       3.60 r
+  Mem/MARTRS1/U1/dataout[2] (mux_2_73)                    0.00       3.60 r
+  Mem/MARTRS1/OP[2] (tri_state_buffer_n32_70)             0.00       3.60 r
+  Mem/U5/Q (AND2X1)                                       0.26       3.86 r
+  Mem/SCR1[2] (Memory_n32)                                0.00       3.86 r
+  U327/Q (AND4X2)                                         0.48       4.34 r
+  ALU/A[2] (ALSU_n32)                                     0.00       4.34 r
+  ALU/set1/a[2] (set_n32)                                 0.00       4.34 r
+  ALU/set1/U48/QN (INVX4)                                 0.11       4.45 f
+  ALU/set1/U115/QN (NOR2X4)                               0.09       4.54 r
+  ALU/set1/U16/QN (NOR2X4)                                0.13       4.67 f
+  ALU/set1/U15/QN (INVX4)                                 0.07       4.73 r
+  ALU/set1/U114/QN (NOR2X4)                               0.09       4.82 f
+  ALU/set1/U145/Q (AO221X1)                               0.46       5.28 f
+  ALU/set1/U146/Q (OA221X1)                               0.48       5.76 f
+  ALU/set1/U105/QN (AOI221X2)                             0.51       6.27 r
+  ALU/set1/U141/QN (AOI221X1)                             0.34       6.62 f
+  ALU/set1/U142/QN (NOR2X4)                               0.10       6.72 r
+  ALU/set1/U104/QN (NOR2X4)                               0.10       6.82 f
+  ALU/set1/U94/QN (NOR2X4)                                0.09       6.91 r
+  ALU/set1/U24/QN (NAND2X4)                               0.09       7.00 f
+  ALU/set1/U69/QN (NAND3X0)                               0.16       7.16 r
+  ALU/set1/U66/QN (NAND2X2)                               0.13       7.29 f
+  ALU/set1/U65/QN (NAND3X0)                               0.16       7.45 r
+  ALU/set1/U110/QN (NAND2X2)                              0.12       7.57 f
+  ALU/set1/U150/Q (OA221X1)                               0.49       8.07 f
+  ALU/set1/U80/QN (INVX2)                                 0.10       8.17 r
+  ALU/set1/U70/QN (NAND2X2)                               0.08       8.25 f
+  ALU/set1/U147/Q (OA221X1)                               0.48       8.74 f
+  ALU/set1/U81/QN (INVX2)                                 0.09       8.83 r
+  ALU/set1/U86/QN (NAND3X0)                               0.15       8.98 f
+  ALU/set1/U149/Q (OA221X1)                               0.51       9.49 f
+  ALU/set1/U92/QN (NOR2X2)                                0.12       9.61 r
+  ALU/set1/U62/Q (OR2X2)                                  0.22       9.83 r
+  ALU/set1/U37/QN (NAND2X2)                               0.09       9.93 f
+  ALU/set1/U43/QN (INVX2)                                 0.07       9.99 r
+  ALU/set1/U77/QN (NOR3X0)                                0.15      10.14 f
+  ALU/set1/U74/Q (AO221X1)                                0.50      10.64 f
+  ALU/set1/U71/QN (NAND3X0)                               0.19      10.84 r
+  ALU/set1/U17/Q (AND2X2)                                 0.28      11.12 r
+  ALU/set1/U23/Q (AO221X2)                                0.28      11.40 r
+  ALU/set1/U103/QN (NAND3X0)                              0.20      11.60 f
+  ALU/set1/U148/Q (OA221X1)                               0.49      12.08 f
+  ALU/set1/U22/QN (AOI221X2)                              0.54      12.62 r
+  ALU/set1/U100/QN (NOR2X4)                               0.12      12.74 f
+  ALU/set1/U21/QN (NAND2X2)                               0.12      12.86 r
+  ALU/set1/U108/QN (NAND2X4)                              0.13      12.99 f
+  ALU/set1/f[0] (set_n32)                                 0.00      12.99 f
+  ALU/U55/QN (INVX4)                                      0.08      13.07 r
+  ALU/Z (ALSU_n32)                                        0.00      13.07 r
+  Dec/Z (Decoders_n32)                                    0.00      13.07 r
+  Dec/InstDecoder/Z (inst_dec_n32)                        0.00      13.07 r
+  Dec/InstDecoder/U292/QN (NAND2X2)                       0.11      13.17 f
+  Dec/InstDecoder/U136/QN (NAND2X4)                       0.09      13.27 r
+  Dec/InstDecoder/U295/QN (NAND2X4)                       0.08      13.35 f
+  Dec/InstDecoder/U298/QN (NOR2X4)                        0.14      13.49 r
+  Dec/InstDecoder/U139/QN (NOR2X4)                        0.12      13.60 f
+  Dec/InstDecoder/U138/QN (NAND2X2)                       0.10      13.70 r
+  Dec/InstDecoder/MAddress_reg[2]/D (DFFARX1)             0.00      13.70 r
+  data arrival time                                                 13.70
+
+  clock clock' (rise edge)                               13.00      13.00
+  clock network delay (ideal)                             1.50      14.50
+  clock uncertainty                                      -0.30      14.20
+  Dec/InstDecoder/MAddress_reg[2]/CLK (DFFARX1)           0.00      14.20 r
+  library setup time                                     -0.31      13.89
+  data required time                                                13.89
+  --------------------------------------------------------------------------
+  data required time                                                13.89
+  data arrival time                                                -13.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: Dec/InstDecoder/Imm_reg
+              (rising edge-triggered flip-flop clocked by clock')
+  Endpoint: Mem/MDR/q_reg[27]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Decoders_n32       8000                  saed90nm_max
+  inst_dec_n32       8000                  saed90nm_max
+  Processor_n32      280000                saed90nm_max
+  IR_n32             8000                  saed90nm_max
+  my_nadder_n32      8000                  saed90nm_max
+  my_adder_15        ForQA                 saed90nm_max
+  my_adder_5         ForQA                 saed90nm_max
+  ALSU_n32           8000                  saed90nm_max
+  Memory_n32         140000                saed90nm_max
+  my_nDFF_n32_36     8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock' (rise edge)                               13.00      13.00
+  clock network delay (ideal)                             1.50      14.50
+  Dec/InstDecoder/Imm_reg/CLK (DFFARX2)                   0.00      14.50 r
+  Dec/InstDecoder/Imm_reg/QN (DFFARX2)                    0.73      15.23 f
+  Dec/InstDecoder/U146/QN (INVX8)                         0.13      15.36 r
+  Dec/InstDecoder/Imm (inst_dec_n32)                      0.00      15.36 r
+  Dec/Imm (Decoders_n32)                                  0.00      15.36 r
+  InstReg/Imm (IR_n32)                                    0.00      15.36 r
+  InstReg/U2/Imm (Extend_n32)                             0.00      15.36 r
+  InstReg/U2/U23/Q (AND2X4)                               0.57      15.93 r
+  InstReg/U2/U25/Q (AO21X1)                               0.38      16.31 r
+  InstReg/U2/Dout[17] (Extend_n32)                        0.00      16.31 r
+  InstReg/U3/IP[17] (tri_state_buffer_n32_3)              0.00      16.31 r
+  InstReg/U3/U1/a[17] (mux_2_2)                           0.00      16.31 r
+  InstReg/U3/U1/U3/Q (MUX21X1)                            0.33      16.64 r
+  InstReg/U3/U1/dataout[17] (mux_2_2)                     0.00      16.64 r
+  InstReg/U3/OP[17] (tri_state_buffer_n32_3)              0.00      16.64 r
+  InstReg/OP1[17] (IR_n32)                                0.00      16.64 r
+  U297/Q (AND4X1)                                         0.46      17.10 r
+  ALU/A[17] (ALSU_n32)                                    0.00      17.10 r
+  ALU/arith1/a[17] (arith_n32)                            0.00      17.10 r
+  ALU/arith1/adder/a[17] (my_nadder_n32)                  0.00      17.10 r
+  ALU/arith1/adder/U1/QN (INVX4)                          0.13      17.23 f
+  ALU/arith1/adder/U2/QN (INVX8)                          0.10      17.33 r
+  ALU/arith1/adder/fx_17/a (my_adder_15)                  0.00      17.33 r
+  ALU/arith1/adder/fx_17/U3/QN (INVX32)                   0.09      17.42 f
+  ALU/arith1/adder/fx_17/U4/Q (XNOR2X2)                   1.00      18.43 f
+  ALU/arith1/adder/fx_17/U2/Q (NBUFFX16)                  0.62      19.04 f
+  ALU/arith1/adder/fx_17/U5/Q (AO22X1)                    0.54      19.58 f
+  ALU/arith1/adder/fx_17/cout (my_adder_15)               0.00      19.58 f
+  ALU/arith1/adder/fx_18/cin (my_adder_14)                0.00      19.58 f
+  ALU/arith1/adder/fx_18/U5/Q (AO22X1)                    0.48      20.06 f
+  ALU/arith1/adder/fx_18/cout (my_adder_14)               0.00      20.06 f
+  ALU/arith1/adder/fx_19/cin (my_adder_13)                0.00      20.06 f
+  ALU/arith1/adder/fx_19/U3/Q (AO22X1)                    0.48      20.54 f
+  ALU/arith1/adder/fx_19/cout (my_adder_13)               0.00      20.54 f
+  ALU/arith1/adder/fx_20/cin (my_adder_12)                0.00      20.54 f
+  ALU/arith1/adder/fx_20/U2/Q (AO22X1)                    0.48      21.02 f
+  ALU/arith1/adder/fx_20/cout (my_adder_12)               0.00      21.02 f
+  ALU/arith1/adder/fx_21/cin (my_adder_11)                0.00      21.02 f
+  ALU/arith1/adder/fx_21/U3/Q (AO22X1)                    0.48      21.50 f
+  ALU/arith1/adder/fx_21/cout (my_adder_11)               0.00      21.50 f
+  ALU/arith1/adder/fx_22/cin (my_adder_10)                0.00      21.50 f
+  ALU/arith1/adder/fx_22/U4/Q (AO22X1)                    0.48      21.98 f
+  ALU/arith1/adder/fx_22/cout (my_adder_10)               0.00      21.98 f
+  ALU/arith1/adder/fx_23/cin (my_adder_9)                 0.00      21.98 f
+  ALU/arith1/adder/fx_23/U3/Q (AO22X1)                    0.48      22.46 f
+  ALU/arith1/adder/fx_23/cout (my_adder_9)                0.00      22.46 f
+  ALU/arith1/adder/fx_24/cin (my_adder_8)                 0.00      22.46 f
+  ALU/arith1/adder/fx_24/U4/Q (AO22X1)                    0.48      22.95 f
+  ALU/arith1/adder/fx_24/cout (my_adder_8)                0.00      22.95 f
+  ALU/arith1/adder/fx_25/cin (my_adder_7)                 0.00      22.95 f
+  ALU/arith1/adder/fx_25/U4/Q (AO22X1)                    0.48      23.43 f
+  ALU/arith1/adder/fx_25/cout (my_adder_7)                0.00      23.43 f
+  ALU/arith1/adder/fx_26/cin (my_adder_6)                 0.00      23.43 f
+  ALU/arith1/adder/fx_26/U4/Q (AO22X1)                    0.48      23.91 f
+  ALU/arith1/adder/fx_26/cout (my_adder_6)                0.00      23.91 f
+  ALU/arith1/adder/fx_27/cin (my_adder_5)                 0.00      23.91 f
+  ALU/arith1/adder/fx_27/U2/QN (IBUFFX16)                 0.49      24.41 r
+  ALU/arith1/adder/fx_27/U1/QN (INVX4)                    0.31      24.72 f
+  ALU/arith1/adder/fx_27/U6/Q (XOR2X1)                    0.48      25.20 f
+  ALU/arith1/adder/fx_27/s (my_adder_5)                   0.00      25.20 f
+  ALU/arith1/adder/s[27] (my_nadder_n32)                  0.00      25.20 f
+  ALU/arith1/f[27] (arith_n32)                            0.00      25.20 f
+  ALU/result/a[27] (mux4x2_n32_0)                         0.00      25.20 f
+  ALU/result/U113/Q (AO221X1)                             0.75      25.95 f
+  ALU/result/x[27] (mux4x2_n32_0)                         0.00      25.95 f
+  ALU/F[27] (ALSU_n32)                                    0.00      25.95 f
+  Mem/DstBus[27] (Memory_n32)                             0.00      25.95 f
+  Mem/muxt/a[27] (mux_2_69)                               0.00      25.95 f
+  Mem/muxt/U25/Q (AO22X1)                                 0.51      26.46 f
+  Mem/muxt/dataout[27] (mux_2_69)                         0.00      26.46 f
+  Mem/MDR/d[27] (my_nDFF_n32_36)                          0.00      26.46 f
+  Mem/MDR/U32/Q (AO22X1)                                  0.49      26.95 f
+  Mem/MDR/q_reg[27]/D (DFFARX1)                           0.00      26.95 f
+  data arrival time                                                 26.95
+
+  clock clock (rise edge)                                26.00      26.00
+  clock network delay (ideal)                             1.50      27.50
+  clock uncertainty                                      -0.30      27.20
+  Mem/MDR/q_reg[27]/CLK (DFFARX1)                         0.00      27.20 r
+  library setup time                                     -0.25      26.95
+  data required time                                                26.95
+  --------------------------------------------------------------------------
+  data required time                                                26.95
+  data arrival time                                                -26.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00

@@ -1,0 +1,76 @@
+****************************************
+Report : qor
+Design : Processor_n32
+Version: E-2010.12-SP5-3
+Date   : Sun May 13 18:46:19 2012
+****************************************
+
+
+  Timing Path Group 'INPUTS'
+  -----------------------------------
+  Levels of Logic:              51.00
+  Critical Path Length:         11.20
+  Critical Path Slack:           0.19
+  Critical Path Clk Period:     26.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clock'
+  -----------------------------------
+  Levels of Logic:              26.00
+  Critical Path Length:         12.45
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     26.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        280
+  Hierarchical Port Count:      20219
+  Leaf Cell Count:              20594
+  Buf/Inv Cell Count:            4670
+  CT Buf/Inv Cell Count:            1
+  Combinational Cell Count:     18125
+  Sequential Cell Count:         2469
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   153883.664683
+  Noncombinational Area:
+                        103573.745876
+  Net Area:              25440.068403
+  -----------------------------------
+  Cell Area:            257457.410559
+  Design Area:          282897.478962
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         21748
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: localhost
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.83
+  Logic Optimization:                 18.52
+  Mapping Optimization:               37.42
+  -----------------------------------------
+  Overall Compile Time:               65.04
+  Overall Compile Wall Clock Time:   361.62

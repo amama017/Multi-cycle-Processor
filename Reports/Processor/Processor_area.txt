@@ -1,0 +1,26 @@
+****************************************
+Report : area
+Design : Processor_n32
+Version: E-2010.12-SP5-3
+Date   : Sun May 13 18:44:38 2012
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/student/Desktop/DC_G7/models/saed90nm_max_pg.db)
+
+Number of ports:                            2
+Number of nets:                           471
+Number of cells:                           81
+Number of combinational cells:             75
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          8
+Number of references:                      18
+
+Combinational area:       153883.664683
+Noncombinational area:    103573.745876
+Net Interconnect area:    25440.068403 
+
+Total cell area:          257457.410559
+Total area:               282897.478962
