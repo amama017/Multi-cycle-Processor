@@ -1,0 +1,19 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+-- tri_state_buffer is a buffer controlled by
+-- 'En' Control signal, that control the dataflow
+-- from 'IP' to 'OP' that are Gereric Buses of width n
+-- if 'En' is Deactivated, 'IP' is cutted from 'OP'.
+
+Entity TSB is
+   port( En,IP : in std_logic;
+         OP : out std_logic);
+end TSB;
+
+Architecture RTL of TSB is
+begin
+    --Change when 'En' or 'IP' Change
+    OP <= IP when En = '1' -- Transfer 'IP' to 'OP'
+    else 'Z';  -- Cuttoff the 'OP'
+end RTL;
